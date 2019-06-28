@@ -1,0 +1,16 @@
+<div>
+    <input type="text" #numero/>
+    <button type="submit" (click)="pesquisa_id(numero.value)">Pesquisar</button>
+</div>
+  
+<div>
+  <ul>
+    
+
+    <li *ngFor="let a of this.deputados">
+
+      {{ a.nome }} 
+      <img src="{{ a.urlFoto }}">
+    </li>
+  </ul>
+</div>
